@@ -1,0 +1,3 @@
+/Users/yaakovhaimoff/Desktop/school/year_3/semester2/excellents/python/ex/cmake-build-debug/CMakeFiles/ex.dir
+/Users/yaakovhaimoff/Desktop/school/year_3/semester2/excellents/python/ex/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/yaakovhaimoff/Desktop/school/year_3/semester2/excellents/python/ex/cmake-build-debug/CMakeFiles/rebuild_cache.dir
