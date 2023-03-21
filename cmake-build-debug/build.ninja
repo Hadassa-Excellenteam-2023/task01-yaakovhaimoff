@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: ex
+# Project: ex1
 # Configurations: Debug
 # =============================================================================
 
@@ -39,44 +39,59 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /Users/yaakovhaimoff/Desktop/school/year_3/semester2/excellents/python/ex/cmake-build-debug/
+cmake_ninja_workdir = /Users/yaakovhaimoff/Desktop/school/year_3/semester2/excellents/cpp/ex/ex1/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target ex
+# Object build statements for EXECUTABLE target ex1
 
 
 #############################################
-# Order-only phony target for ex
+# Order-only phony target for ex1
 
-build cmake_object_order_depends_target_ex: phony || CMakeFiles/ex.dir
+build cmake_object_order_depends_target_ex1: phony || CMakeFiles/ex1.dir
 
-build CMakeFiles/ex.dir/main.cpp.o: CXX_COMPILER__ex_Debug /Users/yaakovhaimoff/Desktop/school/year_3/semester2/excellents/python/ex/main.cpp || cmake_object_order_depends_target_ex
-  DEP_FILE = CMakeFiles/ex.dir/main.cpp.o.d
+build CMakeFiles/ex1.dir/src/main.cpp.o: CXX_COMPILER__ex1_Debug /Users/yaakovhaimoff/Desktop/school/year_3/semester2/excellents/cpp/ex/ex1/src/main.cpp || cmake_object_order_depends_target_ex1
+  DEP_FILE = CMakeFiles/ex1.dir/src/main.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -std=gnu++2a
-  OBJECT_DIR = CMakeFiles/ex.dir
-  OBJECT_FILE_DIR = CMakeFiles/ex.dir
+  INCLUDES = -I/Users/yaakovhaimoff/Desktop/school/year_3/semester2/excellents/cpp/ex/ex1/include
+  OBJECT_DIR = CMakeFiles/ex1.dir
+  OBJECT_FILE_DIR = CMakeFiles/ex1.dir/src
+
+build CMakeFiles/ex1.dir/src/Vector.cpp.o: CXX_COMPILER__ex1_Debug /Users/yaakovhaimoff/Desktop/school/year_3/semester2/excellents/cpp/ex/ex1/src/Vector.cpp || cmake_object_order_depends_target_ex1
+  DEP_FILE = CMakeFiles/ex1.dir/src/Vector.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -std=gnu++2a
+  INCLUDES = -I/Users/yaakovhaimoff/Desktop/school/year_3/semester2/excellents/cpp/ex/ex1/include
+  OBJECT_DIR = CMakeFiles/ex1.dir
+  OBJECT_FILE_DIR = CMakeFiles/ex1.dir/src
+
+build CMakeFiles/ex1.dir/src/Stack.cpp.o: CXX_COMPILER__ex1_Debug /Users/yaakovhaimoff/Desktop/school/year_3/semester2/excellents/cpp/ex/ex1/src/Stack.cpp || cmake_object_order_depends_target_ex1
+  DEP_FILE = CMakeFiles/ex1.dir/src/Stack.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -std=gnu++2a
+  INCLUDES = -I/Users/yaakovhaimoff/Desktop/school/year_3/semester2/excellents/cpp/ex/ex1/include
+  OBJECT_DIR = CMakeFiles/ex1.dir
+  OBJECT_FILE_DIR = CMakeFiles/ex1.dir/src
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target ex
+# Link build statements for EXECUTABLE target ex1
 
 
 #############################################
-# Link the executable ex
+# Link the executable ex1
 
-build ex: CXX_EXECUTABLE_LINKER__ex_Debug CMakeFiles/ex.dir/main.cpp.o
+build ex1: CXX_EXECUTABLE_LINKER__ex1_Debug CMakeFiles/ex1.dir/src/main.cpp.o CMakeFiles/ex1.dir/src/Vector.cpp.o CMakeFiles/ex1.dir/src/Stack.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk
-  OBJECT_DIR = CMakeFiles/ex.dir
+  OBJECT_DIR = CMakeFiles/ex1.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = ex
-  TARGET_PDB = ex.dbg
+  TARGET_FILE = ex1
+  TARGET_PDB = ex1.dbg
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/yaakovhaimoff/Desktop/school/year_3/semester2/excellents/python/ex/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/yaakovhaimoff/Desktop/school/year_3/semester2/excellents/cpp/ex/ex1/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -87,12 +102,68 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/yaakovhaimoff/Desktop/school/year_3/semester2/excellents/python/ex/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/yaakovhaimoff/Desktop/school/year_3/semester2/excellents/python/ex -B/Users/yaakovhaimoff/Desktop/school/year_3/semester2/excellents/python/ex/cmake-build-debug
+  COMMAND = cd /Users/yaakovhaimoff/Desktop/school/year_3/semester2/excellents/cpp/ex/ex1/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/yaakovhaimoff/Desktop/school/year_3/semester2/excellents/cpp/ex/ex1 -B/Users/yaakovhaimoff/Desktop/school/year_3/semester2/excellents/cpp/ex/ex1/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/yaakovhaimoff/Desktop/school/year_3/semester2/excellents/cpp/ex/ex1/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for edit_cache
+
+build include/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/yaakovhaimoff/Desktop/school/year_3/semester2/excellents/cpp/ex/ex1/cmake-build-debug/include && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build include/edit_cache: phony include/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build include/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/yaakovhaimoff/Desktop/school/year_3/semester2/excellents/cpp/ex/ex1/cmake-build-debug/include && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/yaakovhaimoff/Desktop/school/year_3/semester2/excellents/cpp/ex/ex1 -B/Users/yaakovhaimoff/Desktop/school/year_3/semester2/excellents/cpp/ex/ex1/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build include/rebuild_cache: phony include/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/yaakovhaimoff/Desktop/school/year_3/semester2/excellents/cpp/ex/ex1/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for edit_cache
+
+build src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/yaakovhaimoff/Desktop/school/year_3/semester2/excellents/cpp/ex/ex1/cmake-build-debug/src && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build src/edit_cache: phony src/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/yaakovhaimoff/Desktop/school/year_3/semester2/excellents/cpp/ex/ex1/cmake-build-debug/src && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/yaakovhaimoff/Desktop/school/year_3/semester2/excellents/cpp/ex/ex1 -B/Users/yaakovhaimoff/Desktop/school/year_3/semester2/excellents/cpp/ex/ex1/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build src/rebuild_cache: phony src/CMakeFiles/rebuild_cache.util
 
 # =============================================================================
 # Target aliases.
@@ -103,9 +174,23 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 #############################################
-# Folder: /Users/yaakovhaimoff/Desktop/school/year_3/semester2/excellents/python/ex/cmake-build-debug
+# Folder: /Users/yaakovhaimoff/Desktop/school/year_3/semester2/excellents/cpp/ex/ex1/cmake-build-debug
 
-build all: phony ex
+build all: phony ex1 include/all src/all
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/yaakovhaimoff/Desktop/school/year_3/semester2/excellents/cpp/ex/ex1/cmake-build-debug/include
+
+build include/all: phony
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/yaakovhaimoff/Desktop/school/year_3/semester2/excellents/cpp/ex/ex1/cmake-build-debug/src
+
+build src/all: phony
 
 # =============================================================================
 # Built-in targets
@@ -114,14 +199,14 @@ build all: phony ex
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../include/CMakeLists.txt ../src/CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../include/CMakeLists.txt ../src/CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake: phony
 
 
 #############################################
