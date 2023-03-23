@@ -3,6 +3,8 @@
 #include "Stack.h"
 
 int main() {
+    std::cout << "check Vector class implementation" << std::endl;
+
     // Create a vector of size 5 with initial value 10
     Vector v(5, 10);
 
@@ -65,6 +67,8 @@ int main() {
         std::cout << v3[i] << " ";
     }
     std::cout << std::endl;
+
+    std::cout << "check Stack class implementation" << std::endl;
 
     // Create a stack and push some values onto it
     Stack s(3, 10);
