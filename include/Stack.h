@@ -1,29 +1,48 @@
 #pragma once
+
 #include "Vector.h"
 
 class Stack {
 public:
-    Stack() = default;
-    Stack(const size_t& initial_size, const int& initial_value);
+    Stack();
+
+    Stack(size_t initial_size, int initial_value);
+
+    Stack(const Stack &other); // Copy constructor
+
     void push(int value);
+
     void pop();
-    int& top();
-    const int& top() const;
+
+    int top();
+
     bool empty() const;
-    size_t size() const;
+
+    size_t size() const { return m_data.size(); };
 
     // Comparison operators
-    bool operator==(const Stack& other) const;
-    bool operator!=(const Stack& other) const;
+    bool operator==(const Stack &other) const;
 
-    // Arithmetic operators with integer values
-    Stack operator+(int value) const;
-    Stack operator-(int value) const;
-    Stack operator*(int value) const;
-    Stack operator/(int value) const;
+    bool operator!=(const Stack &other) const;
 
-    // Plus-equal operator
-    Stack& operator+=(const Stack& other);
+    Stack &operator+=(const Stack &other);
+
+    Stack &operator-=(const Stack &other);
+
+    Stack &operator*=(const Stack &other);
+
+    Stack &operator/=(const Stack &other);
+
+    Stack &operator+=(int value);
+
+    Stack &operator-=(int value);
+
+    Stack &operator*=(int value);
+
+    Stack &operator/=(int value);
+
+    // Copy assignment operator
+    Stack &operator=(const Stack &other);
 
 private:
     Vector m_data;
