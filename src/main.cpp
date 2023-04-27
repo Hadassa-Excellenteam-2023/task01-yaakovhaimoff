@@ -3,70 +3,70 @@
 #include "Stack.h"
 
 int main() {
-//    std::cout << "check Vector class implementation" << std::endl;
-//
-//    // Create a vector of size 5 with initial value 10
-//    Vector v(5, 10);
-//
-//    // Print the contents of the vector
-//    std::cout << "Initial vector: ";
-//    for (size_t i = 0; i < v.size(); ++i) {
-//        std::cout << v[i] << " ";
-//    }
-//    std::cout << std::endl;
-//
-//    // Push back some values
-//    v.push_back(20);
-//    v.push_back(30);
-//    v.push_back(40);
-//
-//    // Print the contents of the vector
-//    std::cout << "After push_back: ";
-//    for (size_t i = 0; i < v.size(); ++i) {
-//        std::cout << v[i] << " ";
-//    }
-//    std::cout << std::endl;
-//
-//    // Pop back a value
-//    v.pop_back();
-//
-//    // Print the contents of the vector
-//    std::cout << "After pop_back: ";
-//    for (size_t i = 0; i < v.size(); ++i) {
-//        std::cout << v[i] << " ";
-//    }
-//    std::cout << std::endl;
-//
-//    // Test the reserve function
-//    v.reserve(8);
-//
-//    // Print the contents of the vector
-//    std::cout << "After reserve: ";
-//    for (size_t i = 0; i < v.size(); ++i) {
-//        std::cout << v[i] << " ";
-//    }
-//    std::cout << std::endl;
-//
-//    // Test copy constructor
-//    Vector v2 = v;
-//
-//    // Print the contents of the vector
-//    std::cout << "Copied vector: ";
-//    for (size_t i = 0; i < v2.size(); ++i) {
-//        std::cout << v2[i] << " ";
-//    }
-//    std::cout << std::endl;
-//
-//    // Test assignment operator
-//    Vector v3(2, 5);
-//    v3 = v;
-//
-//    // Print the contents of the vector
-//    std::cout << "Assigned vector: ";
-//    for (size_t i = 0; i < v3.size(); ++i) {
-//        std::cout << v3[i] << " ";
-//    }
-//    std::cout << std::endl;
+    std::cout << "check Vector class implementation" << std::endl;
+
+    // Create a vector of size 5 with initial value 10
+    Vector v(5, 10);
+
+    // Print the contents of the vector
+    std::cout << "Initial vector: ";
+    for (size_t i = 0; i < v.size(); ++i) {
+        std::cout << v[i] << " ";
+    }
+    std::cout << std::endl;
+
+    // Push back some values
+    v.push_back(20);
+    v.push_back(30);
+    v.push_back(40);
+
+    // Print the contents of the vector
+    std::cout << "After push_back: ";
+    for (size_t i = 0; i < v.size(); ++i) {
+        std::cout << v[i] << " ";
+    }
+    std::cout << std::endl;
+
+    // Pop back a value
+    v.pop_back();
+
+    // Print the contents of the vector
+    std::cout << "After pop_back: ";
+    for (size_t i = 0; i < v.size(); ++i) {
+        std::cout << v[i] << " ";
+    }
+    std::cout << std::endl;
+
+    // Test the reserve function
+    v.reserve(8);
+
+    // Print the contents of the vector
+    std::cout << "After reserve: ";
+    for (size_t i = 0; i < v.size(); ++i) {
+        std::cout << v[i] << " ";
+    }
+    std::cout << std::endl;
+
+    // Test copy constructor
+    Vector v2 = v;
+
+    // Print the contents of the vector
+    std::cout << "Copied vector: ";
+    for (size_t i = 0; i < v2.size(); ++i) {
+        std::cout << v2[i] << " ";
+    }
+    std::cout << std::endl;
+
+    // Test assignment operator
+    Vector v3(2, 5);
+    v3 = v;
+
+    // Print the contents of the vector
+    std::cout << "Assigned vector: ";
+    for (size_t i = 0; i < v3.size(); ++i) {
+        std::cout << v3[i] << " ";
+    }
+    std::cout << std::endl;
 
 
     std::cout << "check Stack class implementation" << std::endl;
